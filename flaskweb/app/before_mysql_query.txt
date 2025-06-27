@@ -1,0 +1,14 @@
+CREATE DATABASE myboard_db;
+#myboard_db 데이터베이스 생성
+
+USE myboard_db;
+
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(50) NOT NULL,
+    content TEXT NOT NULL,
+    writer varchar(30),
+    password varchar(30),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+# posts 테이블 생성
